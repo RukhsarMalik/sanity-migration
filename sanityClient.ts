@@ -2,9 +2,9 @@
 import { createClient } from '@sanity/client';
 
 export const client = createClient({
-  projectId: process.env.projectId, // Replace with your project ID
-  dataset: 'production',        // Or your dataset name
-  apiVersion: '2024-01-04',     // Today's date or latest API version
-  useCdn: false,                // Disable CDN for real-time updates
+  projectId: process.env.projectId, 
+  dataset: 'production',       
+  apiVersion: '2024-01-04',     
+  useCdn: false,                
   token: process.env.token,
 });
